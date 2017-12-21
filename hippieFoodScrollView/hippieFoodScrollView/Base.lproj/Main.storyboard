@@ -21,7 +21,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OQH-FB-Veu" userLabel="Upper View">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="180"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Healthy-Eating.jpg" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cNk-Pq-UeD">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="food" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cNk-Pq-UeD">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="160"/>
                                     </imageView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A1n-DM-y6g">
@@ -211,9 +211,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Healthy-Eating.jpg" width="552" height="370"/>
         <image name="Star" width="16" height="16"/>
         <image name="TabBarBody" width="16" height="16"/>
         <image name="TabBarHome" width="16" height="16"/>
+        <image name="food" width="780" height="500"/>
     </resources>
 </document>

@@ -11,7 +11,8 @@ import UIKit
 class ViewController: UIViewController {
     
     var foodDayLabelData = ["Tumeric", "Sushi Burrito", "Zonic"]
-    var foodImgData = ["https://us.hellomagazine.com/imagenes/healthandbeauty/health-and-fitness/2017061239707/turmeric-health-fad-or-health-fact/0-209-588/turmeric-t.jpg", "https://us.hellomagazine.com/imagenes/healthandbeauty/health-and-fitness/2017061239707/turmeric-health-fad-or-health-fact/0-209-588/turmeric-t.jpg", "https://us.hellomagazine.com/imagenes/healthandbeauty/health-and-fitness/2017061239707/turmeric-health-fad-or-health-fact/0-209-588/turmeric-t.jpg"]
+    var cureLabelData = ["Fight Fatigue", "Reduce Migraines", "Fight Cramps"]
+    var foodImgData: [String]?
     let dataSource1 = CollectionViewDataSource(items: [])
     let dataSource2 = CollectionViewDataSource(items: [])
     
@@ -38,11 +39,16 @@ class ViewController: UIViewController {
             self.dataSource1.items = self.foodDayLabelData
             self.foodCollectionView.dataSource = self.dataSource1
             self.foodCollectionView.reloadData()
+            
+            self.dataSource2.items = self.cureLabelData
+            self.cureCollectionView.dataSource = self.dataSource2
+            self.cureCollectionView.reloadData()
         }
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+    
         foodCollectionView.delegate = self
         let foodCell = UINib(nibName: "FoodCollectionViewCell", bundle: Bundle.main)
         foodCollectionView.register(foodCell, forCellWithReuseIdentifier: "foodCell")
@@ -51,6 +57,17 @@ class ViewController: UIViewController {
             cell.foodNameLabel.text = self.foodDayLabelData[indexPath.row]
             cell.foodNameLabel.adjustsFontSizeToFitWidth = true
         
+            return cell
+        }
+        
+        cureCollectionView.delegate = self
+        let cureCell = UINib(nibName: "CureCollectionViewCell", bundle: Bundle.main)
+        cureCollectionView.register(cureCell, forCellWithReuseIdentifier: "cureCell")
+        dataSource2.configureCell = {(CureCollectionView, indexPath) -> UICollectionViewCell in
+            let cell = self.cureCollectionView.dequeueReusableCell(withReuseIdentifier: "cureCell", for: indexPath) as! CureCollectionViewCell
+            cell.diseaseName.text = self.cureLabelData[indexPath.row]
+            cell.diseaseName.adjustsFontSizeToFitWidth = true
+            
             return cell
         }
     }

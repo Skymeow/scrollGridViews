@@ -12,10 +12,11 @@
 		F9D091F71FEB01B30066A21D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9D091F51FEB01B30066A21D /* Main.storyboard */; };
 		F9D091F91FEB01B30066A21D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9D091F81FEB01B30066A21D /* Assets.xcassets */; };
 		F9D091FC1FEB01B30066A21D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9D091FA1FEB01B30066A21D /* LaunchScreen.storyboard */; };
-		F9F94F4F1FEB2E2900BC25D2 /* Healthy-Eating.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F9F94F4E1FEB2E2900BC25D2 /* Healthy-Eating.jpg */; };
 		F9F94F521FEB35AC00BC25D2 /* FoodCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F94F501FEB35AC00BC25D2 /* FoodCollectionViewCell.swift */; };
 		F9F94F531FEB35AC00BC25D2 /* FoodCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9F94F511FEB35AC00BC25D2 /* FoodCollectionViewCell.xib */; };
 		F9F94F551FEB384F00BC25D2 /* collectionDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F94F541FEB384F00BC25D2 /* collectionDataSource.swift */; };
+		F9F94F5A1FEB802100BC25D2 /* CureCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F94F581FEB802100BC25D2 /* CureCollectionViewCell.swift */; };
+		F9F94F5B1FEB802100BC25D2 /* CureCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9F94F591FEB802100BC25D2 /* CureCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,10 +27,11 @@
 		F9D091F81FEB01B30066A21D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F9D091FB1FEB01B30066A21D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F9D091FD1FEB01B30066A21D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F9F94F4E1FEB2E2900BC25D2 /* Healthy-Eating.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Healthy-Eating.jpg"; sourceTree = "<group>"; };
 		F9F94F501FEB35AC00BC25D2 /* FoodCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCollectionViewCell.swift; sourceTree = "<group>"; };
 		F9F94F511FEB35AC00BC25D2 /* FoodCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FoodCollectionViewCell.xib; sourceTree = "<group>"; };
 		F9F94F541FEB384F00BC25D2 /* collectionDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = collectionDataSource.swift; sourceTree = "<group>"; };
+		F9F94F581FEB802100BC25D2 /* CureCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CureCollectionViewCell.swift; sourceTree = "<group>"; };
+		F9F94F591FEB802100BC25D2 /* CureCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CureCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,7 +72,6 @@
 				F9D091F81FEB01B30066A21D /* Assets.xcassets */,
 				F9D091FA1FEB01B30066A21D /* LaunchScreen.storyboard */,
 				F9D091FD1FEB01B30066A21D /* Info.plist */,
-				F9F94F4E1FEB2E2900BC25D2 /* Healthy-Eating.jpg */,
 			);
 			path = hippieFoodScrollView;
 			sourceTree = "<group>";
@@ -88,6 +89,8 @@
 			children = (
 				F9F94F501FEB35AC00BC25D2 /* FoodCollectionViewCell.swift */,
 				F9F94F511FEB35AC00BC25D2 /* FoodCollectionViewCell.xib */,
+				F9F94F581FEB802100BC25D2 /* CureCollectionViewCell.swift */,
+				F9F94F591FEB802100BC25D2 /* CureCollectionViewCell.xib */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -152,8 +155,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F9D091FC1FEB01B30066A21D /* LaunchScreen.storyboard in Resources */,
-				F9F94F4F1FEB2E2900BC25D2 /* Healthy-Eating.jpg in Resources */,
 				F9D091F91FEB01B30066A21D /* Assets.xcassets in Resources */,
+				F9F94F5B1FEB802100BC25D2 /* CureCollectionViewCell.xib in Resources */,
 				F9F94F531FEB35AC00BC25D2 /* FoodCollectionViewCell.xib in Resources */,
 				F9D091F71FEB01B30066A21D /* Main.storyboard in Resources */,
 			);
@@ -166,6 +169,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9F94F5A1FEB802100BC25D2 /* CureCollectionViewCell.swift in Sources */,
 				F9F94F551FEB384F00BC25D2 /* collectionDataSource.swift in Sources */,
 				F9D091F41FEB01B30066A21D /* ViewController.swift in Sources */,
 				F9F94F521FEB35AC00BC25D2 /* FoodCollectionViewCell.swift in Sources */,
