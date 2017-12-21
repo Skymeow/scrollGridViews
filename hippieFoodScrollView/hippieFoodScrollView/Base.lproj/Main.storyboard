@@ -70,20 +70,20 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="V35-G5-bOd">
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="417"/>
                                                 <subviews>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="DWu-gh-TR5">
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="DWu-gh-TR5">
                                                         <rect key="frame" x="0.0" y="0.0" width="375" height="203.5"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Food Of The Day" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jqh-ME-Owo">
                                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="height" constant="40" id="XOy-Sc-2NR"/>
+                                                                    <constraint firstAttribute="height" constant="40" id="TQz-Z5-oZe"/>
                                                                 </constraints>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="5go-ZF-rFk" userLabel="Food Of The day Collection View">
-                                                                <rect key="frame" x="0.0" y="45" width="375" height="158.5"/>
+                                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="5go-ZF-rFk" userLabel="Food Of The day Collection View">
+                                                                <rect key="frame" x="0.0" y="43" width="375" height="160.5"/>
                                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Nvp-jH-yve">
                                                                     <size key="itemSize" width="50" height="50"/>
@@ -92,7 +92,7 @@
                                                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                                 </collectionViewFlowLayout>
                                                                 <cells>
-                                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FoodCell" id="SN5-SD-gih" customClass="FoodCollectionViewCell" customModule="hippieFoodScrollView" customModuleProvider="target">
+                                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="foodCell" id="SN5-SD-gih" customClass="FoodCollectionViewCell" customModule="hippieFoodScrollView" customModuleProvider="target">
                                                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -104,7 +104,7 @@
                                                             </collectionView>
                                                         </subviews>
                                                     </stackView>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Wxt-8Y-1i7">
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="Wxt-8Y-1i7">
                                                         <rect key="frame" x="0.0" y="213.5" width="375" height="203.5"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Food Cure" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PeV-Rc-DTe">
@@ -116,8 +116,8 @@
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="VZd-Np-2YP" userLabel="Food Cure Collection View">
-                                                                <rect key="frame" x="0.0" y="45" width="375" height="158.5"/>
+                                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="VZd-Np-2YP" userLabel="Food Cure Collection View" customClass="FoodCureCollectionView" customModule="hippieFoodScrollView">
+                                                                <rect key="frame" x="0.0" y="43" width="375" height="160.5"/>
                                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="MGp-Vl-8K8">
                                                                     <size key="itemSize" width="50" height="50"/>
@@ -126,7 +126,7 @@
                                                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                                 </collectionViewFlowLayout>
                                                                 <cells>
-                                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="xmu-eb-m1P">
+                                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cureCell" id="xmu-eb-m1P" customClass="FoodCureCollectionCell" customModule="hippieFoodScrollView" customModuleProvider="target">
                                                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -200,6 +200,8 @@
                     </view>
                     <connections>
                         <outlet property="contentView" destination="GMe-Rm-Xhq" id="3Te-9X-hjw"/>
+                        <outlet property="cureCollectionView" destination="VZd-Np-2YP" id="3Ax-TD-Zbx"/>
+                        <outlet property="foodCollectionView" destination="5go-ZF-rFk" id="rfH-NN-6Lu"/>
                         <outlet property="scrollView" destination="zeG-s8-s4y" id="8CK-Wj-H0Q"/>
                     </connections>
                 </viewController>

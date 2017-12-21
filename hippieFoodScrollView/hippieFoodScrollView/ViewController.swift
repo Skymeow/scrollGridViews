@@ -9,8 +9,14 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-    @IBOutlet weak var FoodCollectionView: UICollectionView!
+    
+    var foodDayLabelData = ["Tumeric", "Sushi Burrito", "Zonic"]
+    var foodImgData = ["https://us.hellomagazine.com/imagenes/healthandbeauty/health-and-fitness/2017061239707/turmeric-health-fad-or-health-fact/0-209-588/turmeric-t.jpg", "https://us.hellomagazine.com/imagenes/healthandbeauty/health-and-fitness/2017061239707/turmeric-health-fad-or-health-fact/0-209-588/turmeric-t.jpg", "https://us.hellomagazine.com/imagenes/healthandbeauty/health-and-fitness/2017061239707/turmeric-health-fad-or-health-fact/0-209-588/turmeric-t.jpg"]
+    let dataSource1 = CollectionViewDataSource(items: [])
+    let dataSource2 = CollectionViewDataSource(items: [])
+    
+    @IBOutlet weak var foodCollectionView: UICollectionView!
+    @IBOutlet weak var cureCollectionView: UICollectionView!
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var contentView: UIView!
     
@@ -27,9 +33,33 @@ class ViewController: UIViewController {
         scrollView.contentInset = scrollViewInsets
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        DispatchQueue.main.async {
+            self.dataSource1.items = self.foodDayLabelData
+            self.foodCollectionView.dataSource = self.dataSource1
+            self.foodCollectionView.reloadData()
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        foodCollectionView.delegate = self
+        let foodCell = UINib(nibName: "FoodCollectionViewCell", bundle: Bundle.main)
+        foodCollectionView.register(foodCell, forCellWithReuseIdentifier: "foodCell")
+        dataSource1.configureCell = {(foodCollectionView, indexPath) -> UICollectionViewCell in
+            let cell = foodCollectionView.dequeueReusableCell(withReuseIdentifier: "foodCell", for: indexPath) as! FoodCollectionViewCell
+            cell.foodNameLabel.text = self.foodDayLabelData[indexPath.row]
+            cell.foodNameLabel.adjustsFontSizeToFitWidth = true
+        
+            return cell
+        }
+    }
+}
+
+extension ViewController: UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let height = self.foodCollectionView.bounds.size.height
+        return CGSize(width: 320, height: height)
     }
 }
 
