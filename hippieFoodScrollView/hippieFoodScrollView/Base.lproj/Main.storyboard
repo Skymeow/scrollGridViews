@@ -28,11 +28,11 @@
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="180"/>
                                         <subviews>
                                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aY7-pk-1Z0">
-                                                <rect key="frame" x="270" y="130" width="100" height="50"/>
+                                                <rect key="frame" x="260" y="140" width="100" height="40"/>
                                                 <color key="backgroundColor" red="0.90000000000000002" green="0.097641509433962298" blue="0.40521226415094308" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="50" id="Kxo-j1-N7k"/>
-                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="l7U-Yj-D5E"/>
+                                                    <constraint firstAttribute="height" constant="40" id="Kxo-j1-N7k"/>
+                                                    <constraint firstAttribute="width" constant="100" id="l7U-Yj-D5E"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="23"/>
                                                 <state key="normal" title="Explore">
@@ -42,9 +42,8 @@
                                         </subviews>
                                         <color key="backgroundColor" red="1" green="0.85619677479385436" blue="0.66853975827203627" alpha="0.10793022263698633" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
-                                            <constraint firstItem="aY7-pk-1Z0" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="A1n-DM-y6g" secondAttribute="leading" constant="20" symbolic="YES" id="4f9-sx-yi4"/>
                                             <constraint firstAttribute="bottom" secondItem="aY7-pk-1Z0" secondAttribute="bottom" id="A9F-Un-cEs"/>
-                                            <constraint firstAttribute="trailing" secondItem="aY7-pk-1Z0" secondAttribute="trailing" constant="5" id="Ggb-Ou-5p8"/>
+                                            <constraint firstAttribute="trailing" secondItem="aY7-pk-1Z0" secondAttribute="trailing" constant="15" id="Ggb-Ou-5p8"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -201,6 +200,7 @@
                     <connections>
                         <outlet property="contentView" destination="GMe-Rm-Xhq" id="3Te-9X-hjw"/>
                         <outlet property="cureCollectionView" destination="VZd-Np-2YP" id="3Ax-TD-Zbx"/>
+                        <outlet property="exploreButton" destination="aY7-pk-1Z0" id="dEI-8V-d14"/>
                         <outlet property="foodCollectionView" destination="5go-ZF-rFk" id="rfH-NN-6Lu"/>
                         <outlet property="scrollView" destination="zeG-s8-s4y" id="8CK-Wj-H0Q"/>
                     </connections>

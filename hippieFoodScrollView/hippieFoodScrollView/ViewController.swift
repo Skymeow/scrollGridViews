@@ -20,6 +20,14 @@ class ViewController: UIViewController {
     @IBOutlet weak var cureCollectionView: UICollectionView!
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var contentView: UIView!
+    @IBOutlet weak var exploreButton: UIButton!
+    
+    func animateButton() {
+        let exploreAnimate = { self.exploreButton.transform = CGAffineTransform(scaleX: 1.1, y: 1.1)
+        }
+        
+        UIView.animate(withDuration: 1.5, delay: 2, options: [.autoreverse, .repeat, .allowUserInteraction, .curveEaseInOut], animations: exploreAnimate, completion: nil)
+    }
     
     override func viewDidLayoutSubviews() {
         let scrollBounds = self.scrollView.bounds
@@ -36,6 +44,7 @@ class ViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         DispatchQueue.main.async {
+            self.animateButton()
             self.dataSource1.items = self.foodDayLabelData
             self.foodCollectionView.dataSource = self.dataSource1
             self.foodCollectionView.reloadData()
