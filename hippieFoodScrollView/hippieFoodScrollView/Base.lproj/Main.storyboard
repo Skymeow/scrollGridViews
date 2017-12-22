@@ -22,7 +22,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="180"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="food" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cNk-Pq-UeD">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="160"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="180"/>
                                     </imageView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A1n-DM-y6g">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="180"/>
@@ -40,14 +40,12 @@
                                                 </state>
                                             </button>
                                         </subviews>
-                                        <color key="backgroundColor" red="1" green="0.85619677479385436" blue="0.66853975827203627" alpha="0.10793022263698633" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="bottom" secondItem="aY7-pk-1Z0" secondAttribute="bottom" id="A9F-Un-cEs"/>
                                             <constraint firstAttribute="trailing" secondItem="aY7-pk-1Z0" secondAttribute="trailing" constant="15" id="Ggb-Ou-5p8"/>
                                         </constraints>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstItem="cNk-Pq-UeD" firstAttribute="leading" secondItem="OQH-FB-Veu" secondAttribute="leading" id="1MA-56-wCP"/>
                                     <constraint firstAttribute="bottom" secondItem="A1n-DM-y6g" secondAttribute="bottom" id="8Oi-gI-8gu"/>
@@ -55,22 +53,22 @@
                                     <constraint firstItem="cNk-Pq-UeD" firstAttribute="top" secondItem="OQH-FB-Veu" secondAttribute="top" id="MQV-kZ-B7y"/>
                                     <constraint firstItem="A1n-DM-y6g" firstAttribute="top" secondItem="OQH-FB-Veu" secondAttribute="top" id="MQh-Do-IZy"/>
                                     <constraint firstAttribute="trailing" secondItem="cNk-Pq-UeD" secondAttribute="trailing" id="Phz-Ch-JWQ"/>
-                                    <constraint firstAttribute="bottom" secondItem="cNk-Pq-UeD" secondAttribute="bottom" constant="20" symbolic="YES" id="j9z-nY-Ozt"/>
+                                    <constraint firstAttribute="bottom" secondItem="cNk-Pq-UeD" secondAttribute="bottom" id="j9z-nY-Ozt"/>
                                     <constraint firstAttribute="height" constant="180" id="nPN-EZ-gUh"/>
                                     <constraint firstItem="A1n-DM-y6g" firstAttribute="leading" secondItem="OQH-FB-Veu" secondAttribute="leading" id="xsY-wO-h27"/>
                                 </constraints>
                             </view>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zeG-s8-s4y">
-                                <rect key="frame" x="0.0" y="195" width="375" height="422"/>
+                                <rect key="frame" x="0.0" y="180" width="375" height="437"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GMe-Rm-Xhq" userLabel="Content View">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="422"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="437"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="V35-G5-bOd">
-                                                <rect key="frame" x="0.0" y="0.0" width="375" height="417"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="432"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="DWu-gh-TR5">
-                                                        <rect key="frame" x="0.0" y="0.0" width="375" height="203.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="375" height="211"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Food Of The Day" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jqh-ME-Owo">
                                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
@@ -82,8 +80,8 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="5go-ZF-rFk" userLabel="Food Of The day Collection View">
-                                                                <rect key="frame" x="0.0" y="43" width="375" height="160.5"/>
-                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                <rect key="frame" x="0.0" y="43" width="375" height="168"/>
+                                                                <color key="backgroundColor" red="0.88235294119999996" green="0.85882352939999995" blue="0.84313725490000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Nvp-jH-yve">
                                                                     <size key="itemSize" width="50" height="50"/>
                                                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -104,7 +102,7 @@
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="Wxt-8Y-1i7">
-                                                        <rect key="frame" x="0.0" y="213.5" width="375" height="203.5"/>
+                                                        <rect key="frame" x="0.0" y="221" width="375" height="211"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Food Cure" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PeV-Rc-DTe">
                                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
@@ -116,8 +114,8 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="VZd-Np-2YP" userLabel="Food Cure Collection View" customClass="FoodCureCollectionView" customModule="hippieFoodScrollView">
-                                                                <rect key="frame" x="0.0" y="43" width="375" height="160.5"/>
-                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                <rect key="frame" x="0.0" y="43" width="375" height="168"/>
+                                                                <color key="backgroundColor" red="0.88235294119999996" green="0.85882352939999995" blue="0.84313725490000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="MGp-Vl-8K8">
                                                                     <size key="itemSize" width="50" height="50"/>
                                                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -140,7 +138,6 @@
                                                 </subviews>
                                             </stackView>
                                         </subviews>
-                                        <color key="backgroundColor" red="0.98823529409999999" green="0.97254901959999995" blue="0.97647058819999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstItem="V35-G5-bOd" firstAttribute="top" secondItem="GMe-Rm-Xhq" secondAttribute="top" id="1E1-lD-RMI"/>
                                             <constraint firstAttribute="bottom" secondItem="V35-G5-bOd" secondAttribute="bottom" constant="5" id="BhP-dv-WVo"/>
@@ -181,13 +178,13 @@
                                 <edgeInsets key="layoutMargins" top="15" left="15" bottom="8" right="15"/>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" red="0.98823529409999999" green="0.97254901959999995" blue="0.97647058819999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="1" green="0.97254901959999995" blue="0.97647058819999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="zeG-s8-s4y" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="4Sa-AU-fH9"/>
                             <constraint firstItem="OQH-FB-Veu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="D3F-9l-Qw7"/>
                             <constraint firstItem="zeG-s8-s4y" firstAttribute="bottom" secondItem="Qwi-5L-b7D" secondAttribute="top" constant="5" id="Hoh-sd-rqR"/>
                             <constraint firstItem="Qwi-5L-b7D" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="L2h-43-C8b"/>
-                            <constraint firstItem="zeG-s8-s4y" firstAttribute="top" secondItem="OQH-FB-Veu" secondAttribute="bottom" constant="15" id="VBb-d3-oCI"/>
+                            <constraint firstItem="zeG-s8-s4y" firstAttribute="top" secondItem="OQH-FB-Veu" secondAttribute="bottom" id="VBb-d3-oCI"/>
                             <constraint firstItem="OQH-FB-Veu" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="YHD-bC-4E6"/>
                             <constraint firstItem="Qwi-5L-b7D" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="atm-kc-JSB"/>
                             <constraint firstItem="OQH-FB-Veu" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="bmz-qy-NWn"/>
