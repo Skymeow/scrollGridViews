@@ -55,12 +55,35 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="86e-aF-F8L">
+                                        <rect key="frame" x="220" y="149" width="50" height="35"/>
+                                        <color key="backgroundColor" red="0.90000000000000002" green="0.097641509429999995" blue="0.40521226420000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="abi-21-Bcz"/>
+                                            <constraint firstAttribute="height" constant="35" id="siL-n7-GsL"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <state key="normal" title="Recipe">
+                                            <color key="titleColor" red="0.98823529409999999" green="0.97254901959999995" blue="0.97647058819999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="30"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="recipeTapped:" destination="gTV-IL-0wX" eventType="touchUpInside" id="mjB-em-QEE"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.047058823529411764" green="0.074509803921568626" blue="0.10196078431372549" alpha="0.45000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="Ba2-zy-fGJ" firstAttribute="centerX" secondItem="3jt-nx-zth" secondAttribute="centerX" id="AMl-cn-nPZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="86e-aF-F8L" secondAttribute="trailing" id="Ma0-rX-1Dk"/>
                                     <constraint firstItem="Ba2-zy-fGJ" firstAttribute="width" secondItem="3jt-nx-zth" secondAttribute="width" multiplier="1:2" id="OWG-wb-ckg"/>
                                     <constraint firstItem="Ba2-zy-fGJ" firstAttribute="centerY" secondItem="3jt-nx-zth" secondAttribute="centerY" id="XJb-Ft-GTZ"/>
+                                    <constraint firstAttribute="bottom" secondItem="86e-aF-F8L" secondAttribute="bottom" id="wIJ-B8-Spo"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>

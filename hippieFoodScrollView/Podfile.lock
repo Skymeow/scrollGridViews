@@ -1,0 +1,15 @@
+PODS:
+  - PullToMakeSoup (2.0):
+    - PullToRefresher (~> 2.0)
+  - PullToRefresher (2.0.2)
+
+DEPENDENCIES:
+  - PullToMakeSoup (~> 2.0)
+
+SPEC CHECKSUMS:
+  PullToMakeSoup: 384a57220e1c197220427494d5959dda73400435
+  PullToRefresher: 5e101a8c3523e67ee0291375ba932ef59e0853c2
+
+PODFILE CHECKSUM: e6c372399dc3bfdeda6d1044adbb52176e75b306
+
+COCOAPODS: 1.3.1

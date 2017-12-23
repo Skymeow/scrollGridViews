@@ -8,8 +8,8 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-    
+class ViewController: UIViewController, passButtonDelegate {
+   
     var foodDayLabelData = ["Tumeric", "Sushi Burrito", "Zonic"]
     var cureLabelData = ["Fight Fatigue", "Reduce Migraines", "Fight Cramps"]
     var foodImgData: [String]?
@@ -21,6 +21,14 @@ class ViewController: UIViewController {
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var contentView: UIView!
     @IBOutlet weak var exploreButton: UIButton!
+    
+    func tapped(_ sender: FoodCollectionViewCell) {
+        let superFoodName = sender.superFoodName
+        let storyBoard = UIStoryboard.init(name: "main", bundle: nil)
+        let superRecipeVC = storyBoard.instantiateViewController(withIdentifier: "superVC") as! SuperfoodViewController
+        superRecipeVC.superFoodName = superFoodName
+        self.present(superRecipeVC, animated: true, completion: nil)
+    }
     
     func animateButton() {
         let exploreAnimate = { self.exploreButton.transform = CGAffineTransform(scaleX: 1.1, y: 1.1)
@@ -63,6 +71,7 @@ class ViewController: UIViewController {
         foodCollectionView.register(foodCell, forCellWithReuseIdentifier: "foodCell")
         dataSource1.configureCell = {(foodCollectionView, indexPath) -> UICollectionViewCell in
             let cell = foodCollectionView.dequeueReusableCell(withReuseIdentifier: "foodCell", for: indexPath) as! FoodCollectionViewCell
+            cell.delegate = self
             cell.foodNameLabel.text = self.foodDayLabelData[indexPath.row]
             cell.foodNameLabel.adjustsFontSizeToFitWidth = true
         

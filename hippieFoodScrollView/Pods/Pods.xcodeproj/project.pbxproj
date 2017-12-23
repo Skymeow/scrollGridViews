@@ -1,0 +1,845 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1004319230F32508EA7994330BEB10B2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDCE98953E2C88F918B5CD3E4401A11A /* Foundation.framework */; };
+		2280C8ACE6F92F079525066A177D58A5 /* PullToMakeSoup.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34318CC42B0F1ABFE053E7154D8A0FA /* PullToMakeSoup.swift */; };
+		231CFB7FBCA81A0B2760894BC7DB0E32 /* Pods-hippieFoodScrollView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BADEA4211069FBFB24E50F456A9CD50A /* Pods-hippieFoodScrollView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2444540896BE7F916281A174E9D45729 /* Pods-hippieFoodScrollView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F7F639525A031B26BACB944B846907F8 /* Pods-hippieFoodScrollView-dummy.m */; };
+		2A351A9262E94569CA91734240081553 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDCE98953E2C88F918B5CD3E4401A11A /* Foundation.framework */; };
+		2A883819721A90D2E4CB31B4C0BD7F21 /* PocketSVG+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3AF80FFB6E749B90988CF36A27A50F3 /* PocketSVG+Extension.swift */; };
+		33C8590A44C0227F5DB867F2802595A7 /* UIScrollView+PullToRefresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32B75F5277F04B3C643BBE08A404F7B /* UIScrollView+PullToRefresh.swift */; };
+		3850A1628718BA0DCE85C1E8DA9CCEE1 /* CookingRefresher.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E9E171AC8227E7A22E2C019F14BF4A9 /* CookingRefresher.xcassets */; };
+		3AE7C82DEDBD67C7AAB31C0204955F58 /* carrot-path-only.svg in Resources */ = {isa = PBXBuildFile; fileRef = 0EEF0BB52AA94251D57BFBD5ABC6E614 /* carrot-path-only.svg */; };
+		40B3C977F391DE9AEF48255CE0754133 /* CAKeyframeAnimation+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B01B3328060A03C7DCD3EBFB9A9BE04 /* CAKeyframeAnimation+Extensions.swift */; };
+		4893C2B35B270B71623B2907B40B24DF /* potato-path-only.svg in Resources */ = {isa = PBXBuildFile; fileRef = D5BF54F4A94AF5363A050703D6F4B67F /* potato-path-only.svg */; };
+		57DE861A8F5DA957F091F3690B83140E /* PullToMakeSoup-Bridging-Header.h in Headers */ = {isa = PBXBuildFile; fileRef = F38E04EDAA6240396554A5C2AD39AC95 /* PullToMakeSoup-Bridging-Header.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5C78F2283776EEFF986C39C83226AB21 /* pea-from-right-path-only.svg in Resources */ = {isa = PBXBuildFile; fileRef = FC5BE40FCA7F825BFB197FDC0B70A30D /* pea-from-right-path-only.svg */; };
+		69A8B2F30FFD6949D9F5EC6DF13F8097 /* PullToRefresher-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B367343AF9FB8A487A4ED468E408DAA /* PullToRefresher-dummy.m */; };
+		6CB8339741AB7DB754711806B1A1DF71 /* DefaultViewAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2A108D65E56358AEF6C645703D6C59 /* DefaultViewAnimator.swift */; };
+		8246D6EA894129700B572F5B68F08D0A /* PullToMakeSoup-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 94C3CBBC298819CCDD502DCB795231F4 /* PullToMakeSoup-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8C23AD1305A39DB2A05D4611B482CBFC /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FEA9D10DAB9583828A89F0607FBFC91 /* State.swift */; };
+		93DF93B0AFE5A20FC0FA03F1FD660C3C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97C119A750DE88A398971DB4547A72DA /* QuartzCore.framework */; };
+		9627C32D707FD88E14D109760F8AE251 /* cover-path-only.svg in Resources */ = {isa = PBXBuildFile; fileRef = 5C8D5120F34062C21202B300D042A87B /* cover-path-only.svg */; };
+		968DAD10E0568D2C2A646CA36F731CB0 /* DefaultRefreshView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3B18680CDF9F318C4E93DB21603F52 /* DefaultRefreshView.swift */; };
+		A594974A9E13D1C3697091F865413C5E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDCE98953E2C88F918B5CD3E4401A11A /* Foundation.framework */; };
+		A6A203B2D6FBE7657F53791D0AE18D8C /* PullToRefresh.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0555A5E014DB9EF5899F7DE8EBC56DA /* PullToRefresh.framework */; };
+		B5BEBCBEA961E051B95305D2FC4FC0AD /* PullToRefresher-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BC80575714AF73F43F715335074ADDCA /* PullToRefresher-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B8C02DED01CC0A907B837072F7DA856E /* PullToMakeSoup-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C9255125C9915F5D96741096765FF82 /* PullToMakeSoup-dummy.m */; };
+		BD3CEBEC367A784938A2B8B34B6A949A /* PullToMakeSoup.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E5369CCABE7841A436AEEF772CC56A5 /* PullToMakeSoup.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C375A1A4DF966919C20B238060F9D80E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB4C8B473B62EE01A341E9396281D8F4 /* CoreGraphics.framework */; };
+		C7CFD48DF465B9ED43E0C8E09B479D49 /* PocketSVG.h in Headers */ = {isa = PBXBuildFile; fileRef = 796C5AE1BB2CE4DABA8DA99517AE4296 /* PocketSVG.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CECFF476529909792AA5100B8E2D623E /* RefreshViewAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4F18C6ED31D485B65F7B36B407056A /* RefreshViewAnimator.swift */; };
+		E58378A0DED5D9BEA0E710FF22AEA65D /* PocketSVG.m in Sources */ = {isa = PBXBuildFile; fileRef = DC16EBD0A0CCD9223937DA79429CC4E6 /* PocketSVG.m */; };
+		F3C7BA0AE1BFCE19E6F2BFB5995887B0 /* PullToRefresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FF4CF0D45B483987BAA30B5082FE4F /* PullToRefresh.swift */; };
+		F42CCB56E0791C0CEECF9FBFC038341F /* pea-from-left-path-only.svg in Resources */ = {isa = PBXBuildFile; fileRef = 7858165F809AA1AF00A9803DFE620D9F /* pea-from-left-path-only.svg */; };
+		F55F3DA77CEDFB936693E4E56BF8C8C4 /* SoupView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9C05B697B7FB08EFCA92972B4C18B2E /* SoupView.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AE57466F5DE28D4F71DAEA41986748E4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 09DEF995CB3CABA7D51E76D348A13BC1;
+			remoteInfo = PullToRefresher;
+		};
+		D0CBF28F882D843F9E3B9271F13B55D7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2E12FD07CE3939797EEFEA1324241C71;
+			remoteInfo = PullToMakeSoup;
+		};
+		D8B1FF5C2732EC8B3DCE309DD2BACDCC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 09DEF995CB3CABA7D51E76D348A13BC1;
+			remoteInfo = PullToRefresher;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0138F5DE1FFB92812A357A7BE520A189 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		08D23AF4BF8DFCC32449B65AB8F88430 /* Pods-hippieFoodScrollView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-hippieFoodScrollView.modulemap"; sourceTree = "<group>"; };
+		0EEF0BB52AA94251D57BFBD5ABC6E614 /* carrot-path-only.svg */ = {isa = PBXFileReference; includeInIndex = 1; name = "carrot-path-only.svg"; path = "PullToMakeSoup/PullToMakeSoup/Resources/carrot-path-only.svg"; sourceTree = "<group>"; };
+		111246EA66627A7184833AFE197BE14A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		132279B39126366A7DE591B3E7DADB98 /* PullToMakeSoup.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = PullToMakeSoup.modulemap; sourceTree = "<group>"; };
+		1B367343AF9FB8A487A4ED468E408DAA /* PullToRefresher-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PullToRefresher-dummy.m"; sourceTree = "<group>"; };
+		1C9255125C9915F5D96741096765FF82 /* PullToMakeSoup-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PullToMakeSoup-dummy.m"; sourceTree = "<group>"; };
+		2B6AC4B80A450F81488CE7B23E1096B9 /* Pods-hippieFoodScrollView-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-hippieFoodScrollView-frameworks.sh"; sourceTree = "<group>"; };
+		2E2A108D65E56358AEF6C645703D6C59 /* DefaultViewAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DefaultViewAnimator.swift; path = PullToRefresh/DefaultViewAnimator.swift; sourceTree = "<group>"; };
+		3E4F18C6ED31D485B65F7B36B407056A /* RefreshViewAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RefreshViewAnimator.swift; path = PullToRefresh/RefreshViewAnimator.swift; sourceTree = "<group>"; };
+		45DB04726482808680A05E1860DB0BC4 /* Pods_hippieFoodScrollView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_hippieFoodScrollView.framework; path = "Pods-hippieFoodScrollView.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		49A4F1190EF271F8EE7302ED84BA6918 /* PullToMakeSoup.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PullToMakeSoup.xcconfig; sourceTree = "<group>"; };
+		53A05053F80812C5FF6FD098A14CC6D6 /* PullToRefresher-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PullToRefresher-prefix.pch"; sourceTree = "<group>"; };
+		565B51FC6B4D9EEE9AACF4ECA2D963C1 /* Pods-hippieFoodScrollView-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-hippieFoodScrollView-acknowledgements.plist"; sourceTree = "<group>"; };
+		5C8D5120F34062C21202B300D042A87B /* cover-path-only.svg */ = {isa = PBXFileReference; includeInIndex = 1; name = "cover-path-only.svg"; path = "PullToMakeSoup/PullToMakeSoup/Resources/cover-path-only.svg"; sourceTree = "<group>"; };
+		5E5369CCABE7841A436AEEF772CC56A5 /* PullToMakeSoup.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PullToMakeSoup.h; path = PullToMakeSoup/PullToMakeSoup.h; sourceTree = "<group>"; };
+		5F1D9BE410CD9686FDCE3E30BFE32AFF /* PullToRefresher.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PullToRefresher.xcconfig; sourceTree = "<group>"; };
+		6B67C189AAB5E750B502413C3019A195 /* PullToMakeSoup.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PullToMakeSoup.framework; path = PullToMakeSoup.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E9E171AC8227E7A22E2C019F14BF4A9 /* CookingRefresher.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = CookingRefresher.xcassets; path = PullToMakeSoup/PullToMakeSoup/Resources/CookingRefresher.xcassets; sourceTree = "<group>"; };
+		7858165F809AA1AF00A9803DFE620D9F /* pea-from-left-path-only.svg */ = {isa = PBXFileReference; includeInIndex = 1; name = "pea-from-left-path-only.svg"; path = "PullToMakeSoup/PullToMakeSoup/Resources/pea-from-left-path-only.svg"; sourceTree = "<group>"; };
+		796C5AE1BB2CE4DABA8DA99517AE4296 /* PocketSVG.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PocketSVG.h; path = PullToMakeSoup/PullToMakeSoup/PocketSVG/PocketSVG.h; sourceTree = "<group>"; };
+		8376A87FF28DC3324A30E7FEF29E5DFC /* Pods-hippieFoodScrollView-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-hippieFoodScrollView-resources.sh"; sourceTree = "<group>"; };
+		8FEA9D10DAB9583828A89F0607FBFC91 /* State.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = State.swift; path = PullToRefresh/State.swift; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		94C3CBBC298819CCDD502DCB795231F4 /* PullToMakeSoup-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PullToMakeSoup-umbrella.h"; sourceTree = "<group>"; };
+		97C119A750DE88A398971DB4547A72DA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		981AF5BA59F2A702EB6BEDE79D63933E /* PullToRefresher.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = PullToRefresher.modulemap; sourceTree = "<group>"; };
+		9B01B3328060A03C7DCD3EBFB9A9BE04 /* CAKeyframeAnimation+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CAKeyframeAnimation+Extensions.swift"; path = "PullToMakeSoup/PullToMakeSoup/CAKeyframeAnimation+Extensions.swift"; sourceTree = "<group>"; };
+		9B3B18680CDF9F318C4E93DB21603F52 /* DefaultRefreshView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DefaultRefreshView.swift; path = PullToRefresh/DefaultRefreshView.swift; sourceTree = "<group>"; };
+		9B5D33D86AB736D2C2C751FEED7775CD /* Pods-hippieFoodScrollView-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-hippieFoodScrollView-acknowledgements.markdown"; sourceTree = "<group>"; };
+		A32B75F5277F04B3C643BBE08A404F7B /* UIScrollView+PullToRefresh.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIScrollView+PullToRefresh.swift"; path = "PullToRefresh/UIScrollView+PullToRefresh.swift"; sourceTree = "<group>"; };
+		A7604C38D2F8AE29A6356C475AA62472 /* Pods-hippieFoodScrollView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-hippieFoodScrollView.release.xcconfig"; sourceTree = "<group>"; };
+		A8ECAB03E07FBE505FD5701FFF503949 /* PullToMakeSoup-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PullToMakeSoup-prefix.pch"; sourceTree = "<group>"; };
+		A8FBDA43AC1BF91C0995BEF2C96C6E2E /* PullToRefresh.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PullToRefresh.framework; path = PullToRefresher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BADEA4211069FBFB24E50F456A9CD50A /* Pods-hippieFoodScrollView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-hippieFoodScrollView-umbrella.h"; sourceTree = "<group>"; };
+		BC80575714AF73F43F715335074ADDCA /* PullToRefresher-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PullToRefresher-umbrella.h"; sourceTree = "<group>"; };
+		CDCE98953E2C88F918B5CD3E4401A11A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D2FF4CF0D45B483987BAA30B5082FE4F /* PullToRefresh.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PullToRefresh.swift; path = PullToRefresh/PullToRefresh.swift; sourceTree = "<group>"; };
+		D34318CC42B0F1ABFE053E7154D8A0FA /* PullToMakeSoup.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PullToMakeSoup.swift; path = PullToMakeSoup/PullToMakeSoup/PullToMakeSoup.swift; sourceTree = "<group>"; };
+		D3AF80FFB6E749B90988CF36A27A50F3 /* PocketSVG+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PocketSVG+Extension.swift"; path = "PullToMakeSoup/PullToMakeSoup/PocketSVG/PocketSVG+Extension.swift"; sourceTree = "<group>"; };
+		D5BF54F4A94AF5363A050703D6F4B67F /* potato-path-only.svg */ = {isa = PBXFileReference; includeInIndex = 1; name = "potato-path-only.svg"; path = "PullToMakeSoup/PullToMakeSoup/Resources/potato-path-only.svg"; sourceTree = "<group>"; };
+		DB4C8B473B62EE01A341E9396281D8F4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		DC16EBD0A0CCD9223937DA79429CC4E6 /* PocketSVG.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PocketSVG.m; path = PullToMakeSoup/PullToMakeSoup/PocketSVG/PocketSVG.m; sourceTree = "<group>"; };
+		E0555A5E014DB9EF5899F7DE8EBC56DA /* PullToRefresh.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PullToRefresh.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9C05B697B7FB08EFCA92972B4C18B2E /* SoupView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = SoupView.xib; path = PullToMakeSoup/PullToMakeSoup/Resources/SoupView.xib; sourceTree = "<group>"; };
+		F38E04EDAA6240396554A5C2AD39AC95 /* PullToMakeSoup-Bridging-Header.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "PullToMakeSoup-Bridging-Header.h"; path = "PullToMakeSoup/PullToMakeSoup-Bridging-Header.h"; sourceTree = "<group>"; };
+		F58C5892DBC66B64269247D575B75E96 /* Pods-hippieFoodScrollView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-hippieFoodScrollView.debug.xcconfig"; sourceTree = "<group>"; };
+		F7F639525A031B26BACB944B846907F8 /* Pods-hippieFoodScrollView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-hippieFoodScrollView-dummy.m"; sourceTree = "<group>"; };
+		FBA2BCA3BDB0952927EFA46D6F68B5BF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC5BE40FCA7F825BFB197FDC0B70A30D /* pea-from-right-path-only.svg */ = {isa = PBXFileReference; includeInIndex = 1; name = "pea-from-right-path-only.svg"; path = "PullToMakeSoup/PullToMakeSoup/Resources/pea-from-right-path-only.svg"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		29A8CE5E7DCC3BD75CAAC9F94ED93A8C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A594974A9E13D1C3697091F865413C5E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1657712149F4E23D7C041849CB67FE3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A351A9262E94569CA91734240081553 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C632CF1501C414CD2EA96049A6276C3D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C375A1A4DF966919C20B238060F9D80E /* CoreGraphics.framework in Frameworks */,
+				1004319230F32508EA7994330BEB10B2 /* Foundation.framework in Frameworks */,
+				A6A203B2D6FBE7657F53791D0AE18D8C /* PullToRefresh.framework in Frameworks */,
+				93DF93B0AFE5A20FC0FA03F1FD660C3C /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00F371CA06F8F9FED04CFF43AA8DE534 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E0555A5E014DB9EF5899F7DE8EBC56DA /* PullToRefresh.framework */,
+				729B528DB6E72CC1C3F6A4BFA9350E6B /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		02D9F3D31ABF7288E6684B54625F33D4 /* PullToRefresher */ = {
+			isa = PBXGroup;
+			children = (
+				9B3B18680CDF9F318C4E93DB21603F52 /* DefaultRefreshView.swift */,
+				2E2A108D65E56358AEF6C645703D6C59 /* DefaultViewAnimator.swift */,
+				D2FF4CF0D45B483987BAA30B5082FE4F /* PullToRefresh.swift */,
+				3E4F18C6ED31D485B65F7B36B407056A /* RefreshViewAnimator.swift */,
+				8FEA9D10DAB9583828A89F0607FBFC91 /* State.swift */,
+				A32B75F5277F04B3C643BBE08A404F7B /* UIScrollView+PullToRefresh.swift */,
+				91C3E650D1BF5969A0BB34BF1E44A7D5 /* Support Files */,
+			);
+			name = PullToRefresher;
+			path = PullToRefresher;
+			sourceTree = "<group>";
+		};
+		4E72C87F8601F937BD49CE0291954410 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				45DB04726482808680A05E1860DB0BC4 /* Pods_hippieFoodScrollView.framework */,
+				6B67C189AAB5E750B502413C3019A195 /* PullToMakeSoup.framework */,
+				A8FBDA43AC1BF91C0995BEF2C96C6E2E /* PullToRefresh.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4FA45582344723BE80D000E0C8C04640 /* PullToMakeSoup */ = {
+			isa = PBXGroup;
+			children = (
+				9B01B3328060A03C7DCD3EBFB9A9BE04 /* CAKeyframeAnimation+Extensions.swift */,
+				796C5AE1BB2CE4DABA8DA99517AE4296 /* PocketSVG.h */,
+				DC16EBD0A0CCD9223937DA79429CC4E6 /* PocketSVG.m */,
+				D3AF80FFB6E749B90988CF36A27A50F3 /* PocketSVG+Extension.swift */,
+				5E5369CCABE7841A436AEEF772CC56A5 /* PullToMakeSoup.h */,
+				D34318CC42B0F1ABFE053E7154D8A0FA /* PullToMakeSoup.swift */,
+				F38E04EDAA6240396554A5C2AD39AC95 /* PullToMakeSoup-Bridging-Header.h */,
+				A7565B97AA1FE41ECC5376FB6C48096E /* Resources */,
+				EF65450F4FF471AA329F58F43B802CF8 /* Support Files */,
+			);
+			name = PullToMakeSoup;
+			path = PullToMakeSoup;
+			sourceTree = "<group>";
+		};
+		6EB54334753F4A6C4A6F8FEA3A9CC682 /* Pods-hippieFoodScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				FBA2BCA3BDB0952927EFA46D6F68B5BF /* Info.plist */,
+				08D23AF4BF8DFCC32449B65AB8F88430 /* Pods-hippieFoodScrollView.modulemap */,
+				9B5D33D86AB736D2C2C751FEED7775CD /* Pods-hippieFoodScrollView-acknowledgements.markdown */,
+				565B51FC6B4D9EEE9AACF4ECA2D963C1 /* Pods-hippieFoodScrollView-acknowledgements.plist */,
+				F7F639525A031B26BACB944B846907F8 /* Pods-hippieFoodScrollView-dummy.m */,
+				2B6AC4B80A450F81488CE7B23E1096B9 /* Pods-hippieFoodScrollView-frameworks.sh */,
+				8376A87FF28DC3324A30E7FEF29E5DFC /* Pods-hippieFoodScrollView-resources.sh */,
+				BADEA4211069FBFB24E50F456A9CD50A /* Pods-hippieFoodScrollView-umbrella.h */,
+				F58C5892DBC66B64269247D575B75E96 /* Pods-hippieFoodScrollView.debug.xcconfig */,
+				A7604C38D2F8AE29A6356C475AA62472 /* Pods-hippieFoodScrollView.release.xcconfig */,
+			);
+			name = "Pods-hippieFoodScrollView";
+			path = "Target Support Files/Pods-hippieFoodScrollView";
+			sourceTree = "<group>";
+		};
+		729B528DB6E72CC1C3F6A4BFA9350E6B /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				DB4C8B473B62EE01A341E9396281D8F4 /* CoreGraphics.framework */,
+				CDCE98953E2C88F918B5CD3E4401A11A /* Foundation.framework */,
+				97C119A750DE88A398971DB4547A72DA /* QuartzCore.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				00F371CA06F8F9FED04CFF43AA8DE534 /* Frameworks */,
+				F79E507AA3107FAFEF32C1A7E7C09C88 /* Pods */,
+				4E72C87F8601F937BD49CE0291954410 /* Products */,
+				D2BABCACF6BE078C7406D15E23AD0190 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		91C3E650D1BF5969A0BB34BF1E44A7D5 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0138F5DE1FFB92812A357A7BE520A189 /* Info.plist */,
+				981AF5BA59F2A702EB6BEDE79D63933E /* PullToRefresher.modulemap */,
+				5F1D9BE410CD9686FDCE3E30BFE32AFF /* PullToRefresher.xcconfig */,
+				1B367343AF9FB8A487A4ED468E408DAA /* PullToRefresher-dummy.m */,
+				53A05053F80812C5FF6FD098A14CC6D6 /* PullToRefresher-prefix.pch */,
+				BC80575714AF73F43F715335074ADDCA /* PullToRefresher-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/PullToRefresher";
+			sourceTree = "<group>";
+		};
+		A7565B97AA1FE41ECC5376FB6C48096E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0EEF0BB52AA94251D57BFBD5ABC6E614 /* carrot-path-only.svg */,
+				6E9E171AC8227E7A22E2C019F14BF4A9 /* CookingRefresher.xcassets */,
+				5C8D5120F34062C21202B300D042A87B /* cover-path-only.svg */,
+				7858165F809AA1AF00A9803DFE620D9F /* pea-from-left-path-only.svg */,
+				FC5BE40FCA7F825BFB197FDC0B70A30D /* pea-from-right-path-only.svg */,
+				D5BF54F4A94AF5363A050703D6F4B67F /* potato-path-only.svg */,
+				E9C05B697B7FB08EFCA92972B4C18B2E /* SoupView.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		D2BABCACF6BE078C7406D15E23AD0190 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6EB54334753F4A6C4A6F8FEA3A9CC682 /* Pods-hippieFoodScrollView */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		EF65450F4FF471AA329F58F43B802CF8 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				111246EA66627A7184833AFE197BE14A /* Info.plist */,
+				132279B39126366A7DE591B3E7DADB98 /* PullToMakeSoup.modulemap */,
+				49A4F1190EF271F8EE7302ED84BA6918 /* PullToMakeSoup.xcconfig */,
+				1C9255125C9915F5D96741096765FF82 /* PullToMakeSoup-dummy.m */,
+				A8ECAB03E07FBE505FD5701FFF503949 /* PullToMakeSoup-prefix.pch */,
+				94C3CBBC298819CCDD502DCB795231F4 /* PullToMakeSoup-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/PullToMakeSoup";
+			sourceTree = "<group>";
+		};
+		F79E507AA3107FAFEF32C1A7E7C09C88 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4FA45582344723BE80D000E0C8C04640 /* PullToMakeSoup */,
+				02D9F3D31ABF7288E6684B54625F33D4 /* PullToRefresher */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		149CB509DA3892FC2795E1AA59EDE9FC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5BEBCBEA961E051B95305D2FC4FC0AD /* PullToRefresher-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		312DE780630B23A4B50BF24EEE9F3442 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7CFD48DF465B9ED43E0C8E09B479D49 /* PocketSVG.h in Headers */,
+				57DE861A8F5DA957F091F3690B83140E /* PullToMakeSoup-Bridging-Header.h in Headers */,
+				8246D6EA894129700B572F5B68F08D0A /* PullToMakeSoup-umbrella.h in Headers */,
+				BD3CEBEC367A784938A2B8B34B6A949A /* PullToMakeSoup.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63A34732B35583267CF39C6ADDFD5E8F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				231CFB7FBCA81A0B2760894BC7DB0E32 /* Pods-hippieFoodScrollView-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		09DEF995CB3CABA7D51E76D348A13BC1 /* PullToRefresher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7E25BD87CD679748D081AAD1D8AEB992 /* Build configuration list for PBXNativeTarget "PullToRefresher" */;
+			buildPhases = (
+				3E59FA3E204260E765DA2969C47312A9 /* Sources */,
+				A1657712149F4E23D7C041849CB67FE3 /* Frameworks */,
+				149CB509DA3892FC2795E1AA59EDE9FC /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PullToRefresher;
+			productName = PullToRefresher;
+			productReference = A8FBDA43AC1BF91C0995BEF2C96C6E2E /* PullToRefresh.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		2E12FD07CE3939797EEFEA1324241C71 /* PullToMakeSoup */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0840F9E5A5666A4DD11F343AF4F948F3 /* Build configuration list for PBXNativeTarget "PullToMakeSoup" */;
+			buildPhases = (
+				363CFBB988D28E321C7F21F857F38F33 /* Sources */,
+				C632CF1501C414CD2EA96049A6276C3D /* Frameworks */,
+				312DE780630B23A4B50BF24EEE9F3442 /* Headers */,
+				34D1CECE580555CD72E24BA70576B3BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FDAED38195CD7A77C589E3FA55908E7C /* PBXTargetDependency */,
+			);
+			name = PullToMakeSoup;
+			productName = PullToMakeSoup;
+			productReference = 6B67C189AAB5E750B502413C3019A195 /* PullToMakeSoup.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		341593F935BE04165EEAA5B519FB5E2E /* Pods-hippieFoodScrollView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB6DF3F927FDB52D347A2E8091A9AF68 /* Build configuration list for PBXNativeTarget "Pods-hippieFoodScrollView" */;
+			buildPhases = (
+				D79AF36F2341AE327D9C5182550718C7 /* Sources */,
+				29A8CE5E7DCC3BD75CAAC9F94ED93A8C /* Frameworks */,
+				63A34732B35583267CF39C6ADDFD5E8F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				481F9D8309712A52C327828F29C4E412 /* PBXTargetDependency */,
+				16DFDC2D3BF6D270D5A7FCB105F9152A /* PBXTargetDependency */,
+			);
+			name = "Pods-hippieFoodScrollView";
+			productName = "Pods-hippieFoodScrollView";
+			productReference = 45DB04726482808680A05E1860DB0BC4 /* Pods_hippieFoodScrollView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 4E72C87F8601F937BD49CE0291954410 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				341593F935BE04165EEAA5B519FB5E2E /* Pods-hippieFoodScrollView */,
+				2E12FD07CE3939797EEFEA1324241C71 /* PullToMakeSoup */,
+				09DEF995CB3CABA7D51E76D348A13BC1 /* PullToRefresher */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		34D1CECE580555CD72E24BA70576B3BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AE7C82DEDBD67C7AAB31C0204955F58 /* carrot-path-only.svg in Resources */,
+				3850A1628718BA0DCE85C1E8DA9CCEE1 /* CookingRefresher.xcassets in Resources */,
+				9627C32D707FD88E14D109760F8AE251 /* cover-path-only.svg in Resources */,
+				F42CCB56E0791C0CEECF9FBFC038341F /* pea-from-left-path-only.svg in Resources */,
+				5C78F2283776EEFF986C39C83226AB21 /* pea-from-right-path-only.svg in Resources */,
+				4893C2B35B270B71623B2907B40B24DF /* potato-path-only.svg in Resources */,
+				F55F3DA77CEDFB936693E4E56BF8C8C4 /* SoupView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		363CFBB988D28E321C7F21F857F38F33 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40B3C977F391DE9AEF48255CE0754133 /* CAKeyframeAnimation+Extensions.swift in Sources */,
+				2A883819721A90D2E4CB31B4C0BD7F21 /* PocketSVG+Extension.swift in Sources */,
+				E58378A0DED5D9BEA0E710FF22AEA65D /* PocketSVG.m in Sources */,
+				B8C02DED01CC0A907B837072F7DA856E /* PullToMakeSoup-dummy.m in Sources */,
+				2280C8ACE6F92F079525066A177D58A5 /* PullToMakeSoup.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E59FA3E204260E765DA2969C47312A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				968DAD10E0568D2C2A646CA36F731CB0 /* DefaultRefreshView.swift in Sources */,
+				6CB8339741AB7DB754711806B1A1DF71 /* DefaultViewAnimator.swift in Sources */,
+				F3C7BA0AE1BFCE19E6F2BFB5995887B0 /* PullToRefresh.swift in Sources */,
+				69A8B2F30FFD6949D9F5EC6DF13F8097 /* PullToRefresher-dummy.m in Sources */,
+				CECFF476529909792AA5100B8E2D623E /* RefreshViewAnimator.swift in Sources */,
+				8C23AD1305A39DB2A05D4611B482CBFC /* State.swift in Sources */,
+				33C8590A44C0227F5DB867F2802595A7 /* UIScrollView+PullToRefresh.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D79AF36F2341AE327D9C5182550718C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2444540896BE7F916281A174E9D45729 /* Pods-hippieFoodScrollView-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		16DFDC2D3BF6D270D5A7FCB105F9152A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PullToRefresher;
+			target = 09DEF995CB3CABA7D51E76D348A13BC1 /* PullToRefresher */;
+			targetProxy = D8B1FF5C2732EC8B3DCE309DD2BACDCC /* PBXContainerItemProxy */;
+		};
+		481F9D8309712A52C327828F29C4E412 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PullToMakeSoup;
+			target = 2E12FD07CE3939797EEFEA1324241C71 /* PullToMakeSoup */;
+			targetProxy = D0CBF28F882D843F9E3B9271F13B55D7 /* PBXContainerItemProxy */;
+		};
+		FDAED38195CD7A77C589E3FA55908E7C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PullToRefresher;
+			target = 09DEF995CB3CABA7D51E76D348A13BC1 /* PullToRefresher */;
+			targetProxy = AE57466F5DE28D4F71DAEA41986748E4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3F0B64D3DB367E9596D7F50B2C9983F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F1D9BE410CD9686FDCE3E30BFE32AFF /* PullToRefresher.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/PullToRefresher/PullToRefresher-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PullToRefresher/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PullToRefresher/PullToRefresher.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = PullToRefresh;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4F67CDF0DEF4840FAD447381FCE0D93D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F58C5892DBC66B64269247D575B75E96 /* Pods-hippieFoodScrollView.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-hippieFoodScrollView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-hippieFoodScrollView/Pods-hippieFoodScrollView.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_hippieFoodScrollView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5823C4A1511B9D00932F35CFE911F2E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 49A4F1190EF271F8EE7302ED84BA6918 /* PullToMakeSoup.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/PullToMakeSoup/PullToMakeSoup-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PullToMakeSoup/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PullToMakeSoup/PullToMakeSoup.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = PullToMakeSoup;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		84B0D3B14786BDEF3D296FB407E9D971 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 49A4F1190EF271F8EE7302ED84BA6918 /* PullToMakeSoup.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/PullToMakeSoup/PullToMakeSoup-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PullToMakeSoup/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PullToMakeSoup/PullToMakeSoup.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = PullToMakeSoup;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		97803B46811A9BDB5E70FA1303AFBFFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		BDD0139D6EB93FA375F887ABD62DAB2E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D6180CCCF0866C8029DD510987802242 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A7604C38D2F8AE29A6356C475AA62472 /* Pods-hippieFoodScrollView.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-hippieFoodScrollView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-hippieFoodScrollView/Pods-hippieFoodScrollView.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_hippieFoodScrollView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FDA7B943E09B48854344D3FA42622334 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F1D9BE410CD9686FDCE3E30BFE32AFF /* PullToRefresher.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/PullToRefresher/PullToRefresher-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PullToRefresher/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PullToRefresher/PullToRefresher.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = PullToRefresh;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0840F9E5A5666A4DD11F343AF4F948F3 /* Build configuration list for PBXNativeTarget "PullToMakeSoup" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5823C4A1511B9D00932F35CFE911F2E6 /* Debug */,
+				84B0D3B14786BDEF3D296FB407E9D971 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97803B46811A9BDB5E70FA1303AFBFFE /* Debug */,
+				BDD0139D6EB93FA375F887ABD62DAB2E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7E25BD87CD679748D081AAD1D8AEB992 /* Build configuration list for PBXNativeTarget "PullToRefresher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F0B64D3DB367E9596D7F50B2C9983F1 /* Debug */,
+				FDA7B943E09B48854344D3FA42622334 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB6DF3F927FDB52D347A2E8091A9AF68 /* Build configuration list for PBXNativeTarget "Pods-hippieFoodScrollView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F67CDF0DEF4840FAD447381FCE0D93D /* Debug */,
+				D6180CCCF0866C8029DD510987802242 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

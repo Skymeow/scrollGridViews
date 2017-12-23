@@ -8,12 +8,20 @@
 
 import UIKit
 
+protocol passButtonDelegate: class {
+    func tapped(_ sender: FoodCollectionViewCell)
+}
 class FoodCollectionViewCell: UICollectionViewCell {
     
+    var superFoodName: String?
+    weak var delegate: passButtonDelegate?
     @IBOutlet weak var foodNameLabel: UILabel!
     @IBOutlet weak var foodOfDayImg: UIImageView!
     @IBOutlet weak var foodOfDayLabel: UILabel!
     
+    @IBAction func recipeTapped(_ sender: UIButton) {
+        delegate?.tapped(self)
+    }
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
