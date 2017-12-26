@@ -15,11 +15,15 @@
 		F9D091FC1FEB01B30066A21D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9D091FA1FEB01B30066A21D /* LaunchScreen.storyboard */; };
 		F9F94F521FEB35AC00BC25D2 /* FoodCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F94F501FEB35AC00BC25D2 /* FoodCollectionViewCell.swift */; };
 		F9F94F531FEB35AC00BC25D2 /* FoodCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9F94F511FEB35AC00BC25D2 /* FoodCollectionViewCell.xib */; };
-		F9F94F551FEB384F00BC25D2 /* CollectionDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F94F541FEB384F00BC25D2 /* CollectionDataSource.swift */; };
+		F9F94F551FEB384F00BC25D2 /* CollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F94F541FEB384F00BC25D2 /* CollectionViewDataSource.swift */; };
 		F9F94F5A1FEB802100BC25D2 /* CureCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F94F581FEB802100BC25D2 /* CureCollectionViewCell.swift */; };
-		F9F94F5B1FEB802100BC25D2 /* CureCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9F94F591FEB802100BC25D2 /* CureCollectionViewCell.xib */; };
 		F9F94F5D1FEE0DD800BC25D2 /* SuperfoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F94F5C1FEE0DD800BC25D2 /* SuperfoodViewController.swift */; };
 		F9F94F5F1FEE1AA500BC25D2 /* TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F94F5E1FEE1AA500BC25D2 /* TableViewDataSource.swift */; };
+		F9F94F611FEE235600BC25D2 /* RecipeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F94F601FEE235600BC25D2 /* RecipeTableViewCell.swift */; };
+		F9F94F631FEE2E3200BC25D2 /* CureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F94F621FEE2E3200BC25D2 /* CureViewController.swift */; };
+		F9F94F661FEE2F5D00BC25D2 /* CureFoodCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F94F641FEE2F5D00BC25D2 /* CureFoodCell.swift */; };
+		F9F94F671FEE2F5D00BC25D2 /* CureFoodCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9F94F651FEE2F5D00BC25D2 /* CureFoodCell.xib */; };
+		F9F94F6A1FF2D66F00BC25D2 /* CureCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9F94F691FF2D66F00BC25D2 /* CureCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,11 +39,15 @@
 		F9D091FD1FEB01B30066A21D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F9F94F501FEB35AC00BC25D2 /* FoodCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCollectionViewCell.swift; sourceTree = "<group>"; };
 		F9F94F511FEB35AC00BC25D2 /* FoodCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FoodCollectionViewCell.xib; sourceTree = "<group>"; };
-		F9F94F541FEB384F00BC25D2 /* CollectionDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionDataSource.swift; sourceTree = "<group>"; };
+		F9F94F541FEB384F00BC25D2 /* CollectionViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewDataSource.swift; sourceTree = "<group>"; };
 		F9F94F581FEB802100BC25D2 /* CureCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CureCollectionViewCell.swift; sourceTree = "<group>"; };
-		F9F94F591FEB802100BC25D2 /* CureCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CureCollectionViewCell.xib; sourceTree = "<group>"; };
 		F9F94F5C1FEE0DD800BC25D2 /* SuperfoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperfoodViewController.swift; sourceTree = "<group>"; };
 		F9F94F5E1FEE1AA500BC25D2 /* TableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDataSource.swift; sourceTree = "<group>"; };
+		F9F94F601FEE235600BC25D2 /* RecipeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeTableViewCell.swift; sourceTree = "<group>"; };
+		F9F94F621FEE2E3200BC25D2 /* CureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CureViewController.swift; sourceTree = "<group>"; };
+		F9F94F641FEE2F5D00BC25D2 /* CureFoodCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CureFoodCell.swift; sourceTree = "<group>"; };
+		F9F94F651FEE2F5D00BC25D2 /* CureFoodCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CureFoodCell.xib; sourceTree = "<group>"; };
+		F9F94F691FF2D66F00BC25D2 /* CureCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CureCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,8 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				F9D091F11FEB01B30066A21D /* AppDelegate.swift */,
-				F9D091F31FEB01B30066A21D /* ViewController.swift */,
-				F9F94F5C1FEE0DD800BC25D2 /* SuperfoodViewController.swift */,
+				F9F94F681FF2C48600BC25D2 /* ViewControllers */,
 				F9D091F51FEB01B30066A21D /* Main.storyboard */,
 				F9F94F571FEB386800BC25D2 /* views */,
 				F9F94F561FEB385900BC25D2 /* Helper */,
@@ -108,7 +115,7 @@
 		F9F94F561FEB385900BC25D2 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
-				F9F94F541FEB384F00BC25D2 /* CollectionDataSource.swift */,
+				F9F94F541FEB384F00BC25D2 /* CollectionViewDataSource.swift */,
 				F9F94F5E1FEE1AA500BC25D2 /* TableViewDataSource.swift */,
 			);
 			path = Helper;
@@ -120,9 +127,22 @@
 				F9F94F501FEB35AC00BC25D2 /* FoodCollectionViewCell.swift */,
 				F9F94F511FEB35AC00BC25D2 /* FoodCollectionViewCell.xib */,
 				F9F94F581FEB802100BC25D2 /* CureCollectionViewCell.swift */,
-				F9F94F591FEB802100BC25D2 /* CureCollectionViewCell.xib */,
+				F9F94F691FF2D66F00BC25D2 /* CureCollectionViewCell.xib */,
+				F9F94F641FEE2F5D00BC25D2 /* CureFoodCell.swift */,
+				F9F94F651FEE2F5D00BC25D2 /* CureFoodCell.xib */,
+				F9F94F601FEE235600BC25D2 /* RecipeTableViewCell.swift */,
 			);
 			path = views;
+			sourceTree = "<group>";
+		};
+		F9F94F681FF2C48600BC25D2 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F9D091F31FEB01B30066A21D /* ViewController.swift */,
+				F9F94F5C1FEE0DD800BC25D2 /* SuperfoodViewController.swift */,
+				F9F94F621FEE2E3200BC25D2 /* CureViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -189,8 +209,9 @@
 			files = (
 				F9D091FC1FEB01B30066A21D /* LaunchScreen.storyboard in Resources */,
 				F9D091F91FEB01B30066A21D /* Assets.xcassets in Resources */,
-				F9F94F5B1FEB802100BC25D2 /* CureCollectionViewCell.xib in Resources */,
 				F9F94F531FEB35AC00BC25D2 /* FoodCollectionViewCell.xib in Resources */,
+				F9F94F6A1FF2D66F00BC25D2 /* CureCollectionViewCell.xib in Resources */,
+				F9F94F671FEE2F5D00BC25D2 /* CureFoodCell.xib in Resources */,
 				F9D091F71FEB01B30066A21D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -260,11 +281,14 @@
 			files = (
 				F9F94F5D1FEE0DD800BC25D2 /* SuperfoodViewController.swift in Sources */,
 				F9F94F5A1FEB802100BC25D2 /* CureCollectionViewCell.swift in Sources */,
-				F9F94F551FEB384F00BC25D2 /* CollectionDataSource.swift in Sources */,
+				F9F94F661FEE2F5D00BC25D2 /* CureFoodCell.swift in Sources */,
+				F9F94F631FEE2E3200BC25D2 /* CureViewController.swift in Sources */,
+				F9F94F551FEB384F00BC25D2 /* CollectionViewDataSource.swift in Sources */,
 				F9D091F41FEB01B30066A21D /* ViewController.swift in Sources */,
 				F9F94F521FEB35AC00BC25D2 /* FoodCollectionViewCell.swift in Sources */,
 				F9F94F5F1FEE1AA500BC25D2 /* TableViewDataSource.swift in Sources */,
 				F9D091F21FEB01B30066A21D /* AppDelegate.swift in Sources */,
+				F9F94F611FEE235600BC25D2 /* RecipeTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

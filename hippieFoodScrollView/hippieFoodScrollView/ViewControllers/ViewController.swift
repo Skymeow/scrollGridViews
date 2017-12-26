@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, passButtonDelegate {
+class ViewController: UIViewController, passButtonDelegate, passCureDelegate {
    
     var foodDayLabelData = ["Tumeric", "Sushi Burrito", "Zonic"]
     var cureLabelData = ["Fight Fatigue", "Reduce Migraines", "Fight Cramps"]
@@ -24,10 +24,16 @@ class ViewController: UIViewController, passButtonDelegate {
     
     func tapped(_ sender: FoodCollectionViewCell) {
         let superFoodName = sender.superFoodName
-        let storyBoard = UIStoryboard.init(name: "main", bundle: nil)
+        let storyBoard = UIStoryboard.init(name: "Main", bundle: nil)
         let superRecipeVC = storyBoard.instantiateViewController(withIdentifier: "superVC") as! SuperfoodViewController
         superRecipeVC.superFoodName = superFoodName
-        self.present(superRecipeVC, animated: true, completion: nil)
+        self.navigationController?.pushViewController(superRecipeVC, animated: true)
+    }
+    
+    func tappedCure(_ sender: CureCollectionViewCell) {
+        let storyBoard = UIStoryboard.init(name: "Main", bundle: nil)
+        let cureVC = storyBoard.instantiateViewController(withIdentifier: "cureVC") as! CureViewController
+        self.navigationController?.pushViewController(cureVC, animated: true)
     }
     
     func animateButton() {
@@ -51,7 +57,7 @@ class ViewController: UIViewController, passButtonDelegate {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        DispatchQueue.main.async {
+            self.navigationController?.navigationBar.isHidden = true
             self.animateButton()
             self.dataSource1.items = self.foodDayLabelData
             self.foodCollectionView.dataSource = self.dataSource1
@@ -60,7 +66,6 @@ class ViewController: UIViewController, passButtonDelegate {
             self.dataSource2.items = self.cureLabelData
             self.cureCollectionView.dataSource = self.dataSource2
             self.cureCollectionView.reloadData()
-        }
     }
     
     override func viewDidLoad() {
@@ -83,6 +88,7 @@ class ViewController: UIViewController, passButtonDelegate {
         cureCollectionView.register(cureCell, forCellWithReuseIdentifier: "cureCell")
         dataSource2.configureCell = {(CureCollectionView, indexPath) -> UICollectionViewCell in
             let cell = self.cureCollectionView.dequeueReusableCell(withReuseIdentifier: "cureCell", for: indexPath) as! CureCollectionViewCell
+            cell.delegate = self
             cell.diseaseName.text = self.cureLabelData[indexPath.row]
             cell.diseaseName.adjustsFontSizeToFitWidth = true
             

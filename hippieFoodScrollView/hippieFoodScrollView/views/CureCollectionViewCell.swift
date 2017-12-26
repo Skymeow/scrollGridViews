@@ -8,11 +8,21 @@
 
 import UIKit
 
+protocol passCureDelegate: class {
+    func tappedCure(_ sender: CureCollectionViewCell)
+}
+
 class CureCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var cureImg: UIImageView!
     @IBOutlet weak var causeContext: UILabel!
     @IBOutlet weak var diseaseName: UILabel!
+    weak var delegate: passCureDelegate?
+    
+    @IBAction func cureTapped(_ sender: UIButton) {
+        print("cure food tapped")
+        delegate?.tappedCure(self)
+    }
     
     override func awakeFromNib() {
         super.awakeFromNib()
