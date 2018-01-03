@@ -7,9 +7,11 @@
 //
 
 import UIKit
+import PullToMakeSoup
 
 class SuperfoodViewController: UIViewController {
     
+    let refresher = PullToMakeSoup(at: .top)
     var recipes = ["1 carrot", "2 spoons of salt", "1 spoon of sunflower oil"]
     var superFoodName: String?
     var dataSource = TableViewDataSource(items: [])
@@ -25,6 +27,18 @@ class SuperfoodViewController: UIViewController {
         }
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(true)
+        self.recipeTableView.startRefreshing(at: .top)
+        recipeTableView.addPullToRefresh(refresher) {
+        //  pull data from source
+           
+//            DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
+                self.recipeTableView.reloadData()
+                self.recipeTableView.endRefreshing(at: .top)
+//            }
+        }
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         dataSource.items = recipes
